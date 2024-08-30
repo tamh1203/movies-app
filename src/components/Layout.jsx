@@ -4,6 +4,7 @@ import { CssBaseline } from "@mui/material";
 import { Link } from "react-router-dom";
 import logoMovies from "../logo-movies.png";
 import { styled } from "@mui/system";
+import SearchMovieSuggestion from "../containers/SearchMovieSuggestion";
 
 const darkTheme = createTheme({
 	palette:{
@@ -40,6 +41,7 @@ const Layout = ({children})=>{
 				<Link to="/" >
 					<Img src={logoMovies} alt="The Movies" />
 				</Link>
+				<SearchMovieSuggestion />
 			</LayoutWrapper>
 			{children}
 		</ThemeProvider>
